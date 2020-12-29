@@ -1,7 +1,7 @@
-<footer class="footer-area section-gap">
+<footer class="footer-area">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-5 col-md-6 col-sm-6">
+        <div class="row py-4 justify-content-between">
+            <div class="col-lg-4 col-md-5 mt-4">
                 <div class="single-footer-widget">
                     <h4 class="colored-text">{{ site.current_class }}-{{ site.current_class | plus: 1 }} Pitt CSC Officers</h4>
                     {% for officer in site.data.officers %}
@@ -11,7 +11,7 @@
                     {% endfor %}
                 </div>
             </div>
-            <div class="col-lg-5 col-md-6 col-sm-6">
+            <div class="col-lg-4 col-md-4 mt-4">
                 <div class="single-footer-widget">
                     <h4>Mailing List</h4>
                     <p class="colored-text">Sign up for our mailing list to be up to date on all things CSC. 
@@ -20,16 +20,37 @@
                         </div>
                     </p>
                 </div>
+                <div class="donation-wrapper">
+                    <style>
+                        .donation-wrapper button {
+                            border-radius: 2px;
+                            border: 1px solid #c1af7a;
+                            background: #cab57c;
+                            margin-right: 5px;
+                        }
+                        .hide {
+                            display: none;
+                        }
+                    </style>
+                    <div id="donation-button">
+                        <button id="donate-button">DONATE!</button>
+                    </div>
+                    <div id="money-buttons" class="hide">
+                        <button class="donation-money-button" data-price-id="price_1I3XcNHVuS89JQvcSR0Kqrfv">$5</button>
+                        <button class="donation-money-button" data-price-id="price_1I3XcJHVuS89JQvctfU0y3ML">$15</button>
+                        <button class="donation-money-button" data-price-id="price_1I3XcEHVuS89JQvcmLgjouqN">$35</button>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-2 col-md-6 col-sm-6 social-widget">
+            <div class="col-lg-4 col-md-3 social-widget mt-4">
                 <div class="single-footer-widget">
                     <h4>Follow the CSC</h4>
                     <p class="colored-text">Hit us up!</p>
-                    <div class="footer-social d-flex align-items-center">
-                        <a href="http://instagram.com/pittcsc"><i class="fa fa-instagram"></i></a>
-                        <a href="http://linkedin.com/company/pittcsc"><i class="fa fa-linkedin"></i></a>
-                        <a href="http://github.com/pitt-csc"><i class="fa fa-github"></i></a>
-                        <a href="http://pittcsc.slack.com"><i class="fa fa-slack"></i></a>	
+                    <div class="footer-social d-flex justify-content-around mt-4">
+                        <a href="http://instagram.com/pittcsc"><i class="fa fa-2x fa-instagram"></i></a>
+                        <a href="http://linkedin.com/company/pittcsc"><i class="fa fa-2x fa-linkedin"></i></a>
+                        <a href="http://github.com/pittcsc"><i class="fa fa-2x fa-github"></i></a>
+                        <a href="http://pittcsc.slack.com"><i class="fa fa-2x fa-slack"></i></a>	
                     </div>
                 </div>
             </div>
